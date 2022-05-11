@@ -10,12 +10,12 @@ router.get('/', withAuth, async (req, res) => {
         attributes: [
           'id',
           'title',
-          'created_at',
-          'post_contents'
+          'post_contents',
+          'date_created',
         ],
 
       ]
-
+    },
 }
 router.post('/', withAuth, async (req, res) => {
   try {
@@ -52,4 +52,4 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = Router;
