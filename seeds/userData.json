@@ -12,5 +12,3 @@
     "password": "password12345"
   }
 ] 
-
-module.exports = seedUser;

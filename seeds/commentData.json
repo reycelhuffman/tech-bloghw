@@ -1,7 +1,7 @@
 [
     {
         "user_id": "2",
-        "commentContents": " These are pretty cool app to use!",
+        "comment_contents": "These are pretty cool app to use!",
         "date_created": "5/12/2022"
     }
 ]
