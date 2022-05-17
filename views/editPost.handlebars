@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="columns">
+        <div class="column is-3 ">
+            <aside class="menu is-hidden-mobile">
+                <p class="menu-label">
+                    Recipes
+                </p>
+                <ul class="menu-list">
+                    <li><a href="/profile">View My Recipes</a></li>
+                    <li><a>Add A New Recipe</a></li>
+                    <li><a class="is-active">Edit A Recipe</a></li>
+                </ul>
+            </aside>
+        </div>
+        <div class="column is-10">
+            <section class="hero is-info welcome is-small">
+                <div class="hero-body">
+                    <div class="container is-14">
+                        <h1 class="title">
+                            Hello, {{user.username}}!
+                        </h1>
+                        <h2 class="subtitle">
+                            Edit recipe below...
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            {{!-- form section begins here --}}
+            <section class="section">
+                <div class="container has-text-centered">
+                    <h2 class="title">Recipe Details</h2>
+                    <form class="update-meal-form">
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <p class="control has-icons-left">
+                                        <input id="meal-name" class="input class="checkState"" type="text" value="{{title}}" >
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-horizontal">
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <textarea id="meal-details" class="textarea" >{{description}}</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
