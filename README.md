@@ -12,9 +12,14 @@
 
 
 ## Screenshots of Heroku links 
-screenshot here
+![Screenshot](https://github.com/reycelhuffman/tech-bloghw/commentdisplayed.png);
+![Screenshot](https://github.com/reycelhuffman/tech-bloghw/loginsignupscreenshot.png);
+![Screenshot](https://github.com/reycelhuffman/tech-bloghw/makingcomments.png);
+![Screenshot](https://github.com/reycelhuffman/tech-bloghw/screenshot.png);
 
-## Credit: Instructors and TA's at Northwestern, Joshua Christianson 
+
+## Credit: 
+Instructors and TA's at Northwestern, Joshua Christianson 
 
 ## Licenses Used
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
