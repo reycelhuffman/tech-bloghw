@@ -2,47 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tech Blog</title>
+	<link rel="stylesheet" href="../../css/styles.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="tech">💸</span>
-        <lu ></lu>
-        <li class="<a href="/">Home!</a>>Home</li> 
-        <li class="<a href="/">Dashboard</a>>Dashboard</li>
-        <li>Log In</li>
-        <li>Log Out</li>class="<a href="/">Home!</a>
-      </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-    <footer>
-      
-    </footer>
-  </div>
-
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
+	<header class="header">
+		<section class="navBar">
+			<a href="/">
+				<h3 class="navMenu">
+					Home
+				</h3>
+				</a>
+			{{#if logged_in}}
+			<a href="/profile">
+				<h3 class="navMenu">
+					Dashboard
+				</h3>
+			</a>
+			<a>
+				<h3 class="navMenu" id="logout">
+					Logout
+				</h3>
+			</a>
+			{{else}}
+			<a href="/login">
+				<h3 class="navMenu">
+					Login/SignUp
+				</h3>
+			</a>
+			{{/if}}
+		</section>
+		<div class="techBlogEmblem">
+			<h1>The Tech Blog</h1>
+		</div>
+	</header>
+	{{{ body }}}
+	{{#if logged_in}}
+	<script src="/js/logout.js"></script>
+	{{/if}}
 </body>
 
 </html>
