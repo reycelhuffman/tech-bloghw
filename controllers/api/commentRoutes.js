@@ -1,57 +1,55 @@
 const router = require('express').Router();
-const { Post, Comment } = require('../../models');
+const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
-    try {
-        const comment = await Comment.create({
-            ...req.body,
-            user_id: req.session.user_id,
+  try {
+    const comment = await Comment.create({
+      ...req.body,
+      user_id: req.session.user_id,
+    });
 
-        });
-
-        res.status(200).json(comment);
-    } catch (err) {
-        res.status(400).json(err);
-    }
+    res.status(200).json(comment);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.put('/:id', withAuth, async (req, res) => {
-    try {
-        const comment = await Comment.update(req.body, {
-            where: {
-                id: req.params.id,
-            },
-        });
-        if (!comment[0]) {
-            res.status(404).json({ message: 'No comment could be found by that id...' });
-            return;
-        }
-        res.status(200).json({ message: 'The requested comment was updated' });
-    } catch (err) {
-        res.status(500).json(err);
+  try {
+    const comment = await Comment.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!comment[0]) {
+      res.status(404).json({ message: 'No comment could be found by that id...' });
+      return;
     }
+    res.status(200).json({ message: 'The requested comment was updated' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
-
 router.delete('/:id', withAuth, async (req, res) => {
-    try {
-        const commentData = await Comment.destroy({
-            where: {
-                id: req.params.id,
-                user_id: req.session.user_id,
-            },
-        });
+  try {
+    const commentData = await Comment.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
 
-        if (!commentData) {
-            res.status(404).json({ message: 'No comment found with this id!' });
-            return;
-        }
-
-        res.status(200).json(commentData);
-    } catch (err) {
-        res.status(500).json(err);
+    if (!commentData) {
+      res.status(404).json({ message: 'No comment found with this id!' });
+      return;
     }
+
+    res.status(200).json(commentData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;

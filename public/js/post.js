@@ -4,13 +4,13 @@ const postHandler = async (event) => {
 
     const title = document.querySelector('#post-title').value.trim();
     console.log(title);
-    const content = document.querySelector('#post-contents').value.trim();
-    console.log(content);
+    const post_contents = document.querySelector('#post-contents').value.trim();
+    console.log(post_contents);
 
-    if (title && content) {
+    if (title && post_contents) {
     const response = await fetch(`/api/posts`, {
         method: 'POST',
-        body: JSON.stringify({ title, content }),
+        body: JSON.stringify({ title, post_contents }),
         headers: {
         'Content-Type': 'application/json',
         },

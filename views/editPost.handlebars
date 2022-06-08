@@ -1,42 +1,41 @@
+<section class="pageBox">
+    <form class="update-post-form">
+        <div class="field is-horizontal">
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input id="post-title" class="input" class="checkState" type="text"
+                            value="{{title}}">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <div class="column is-10">
-            <section class="hero is-info welcome is-small">
-                <div class="hero-body">
-                    <div class="container is-14">
-                        <h1 class="title">
-                            Hello, {{username}}!
-                        </h1>
-                        <h2 class="subtitle">
-                            Use the form below to edit your post
-                        </h2>
+        <div class="field is-horizontal">
+            <div class="field-body">
+                <div class="field">
+                    <div class="control boxShadow borderRadius">
+                        <textarea class="textarea" id="post-contents"
+                            placeholder="Post Contents">{{post_contents}}</textarea>
                     </div>
                 </div>
-            </section>
-            {{!-- form section begins here --}}
-            <section class="section">
-                <div class="container has-text-centered">
-                    <h2 class="title">Post Details</Details></Details></h2>
-                    <form class="update-post-form">
-                        <div class="field is-horizontal">
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control has-icons-left">
-                                        <input id="post-title" class="input class="checkState"" type="text" value="{{title}}" >
-                                        <span class="icon is-small is-left">
-                                            <i class="fas fa-user"></i>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <button class="button" id="updatePostBtn">
+                            Edit Post!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+<script src="/js/editPost.js"></script>
+</body>
 
-                        <div class="field is-horizontal">
-                            <div class="field-body">
-                                <div class="field">
-                                    <div class="control">
-                                        <button class="button is-primary textShadow1px boxShadow" id="updatedPostBtn" >Submit Post Edit</button>>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <script scr="/js/editPost/js"></script>
+</html>

@@ -10,7 +10,7 @@
     </div>
     <div class="postText">
       <p>
-        {{content}}
+        {{post_contents}}
       </p>
     </div>
   </section>
@@ -19,8 +19,8 @@
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field">
-          <div class="control boxShadow borderRadius">
-            <textarea class="textarea textShadow1px" id="comment" placeholder="Enter Comment Here"></textarea>
+          <div class="control">
+            <textarea class="textarea" id="comment" placeholder="Enter Comment Here"></textarea>
             <input type="hidden" value="{{id}}" name="post-id">
           </div>
         </div>
@@ -30,7 +30,7 @@
       <div class="field-body">
         <div class="field">
           <div class="control">
-            <button class="button is-primary textShadow1px boxShadow" id="addCommentBtn">
+            <button class="button" id="addCommentBtn">
               Submit Comment!
             </button>
           </div>

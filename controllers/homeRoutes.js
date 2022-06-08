@@ -151,7 +151,7 @@ router.get('/comment/:id', async (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ['commentConent'],
+          attributes: ['comment_contents'],
         },
       ],
     });
