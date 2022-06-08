@@ -1,20 +1,55 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
+<section class="pageBox">
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
+    <h3 class="">Login</h3>
+    <hr class="">
+    <p class="">Please enter your account information to login.</p>
+    <div>
+        <form class="login-form">
+            <div class="field">
+                <div class="control">
+                    <input id="username-login" class="input" type="username" placeholder="Username" autofocus="">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input id="password-login" class="input" type="password" placeholder="Password">
+                </div>
+            </div>
+            <button class="button" type="submit">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        </form>
+    </div>
 
-<script src="./js/login.js"></script>
+    </div>
+    <div class="">
+        <div class="">
+            <h3 class="">Sign Up</h3>
+            <p class="">Please enter your information to sign up.</p>
+            <div class="">
+                <form class="signup-form">
+                    <div class="field signup-form">
+                        <div class="control">
+                            <input id="username-signup" class="input" type="username" placeholder="Username"
+                                autofocus="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input id="password-signup" class="input" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Sign
+                        Up <i class="fa fa-sign-up" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <p class="has-text-grey">
+            </p>
+        </div>
+    </div>
+
+
+
+</section>
+<script src="/js/login.js"></script>
+</body>
+
+</html>
