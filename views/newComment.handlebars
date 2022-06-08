@@ -1,0 +1,47 @@
+<section class="pageBox">
+  <section class="postBox">
+    <div class="postMessageHeader">
+      <div>
+        <h4 class="leftAlign">{{title}}</h4>
+      </div>
+      <div class="rightAlign">
+        <h5>Posted by {{user.username}}</h5>
+      </div>
+    </div>
+    <div class="postText">
+      <p>
+        {{content}}
+      </p>
+    </div>
+  </section>
+
+  <form class="new-comment-form">
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control boxShadow borderRadius">
+            <textarea class="textarea textShadow1px" id="comment" placeholder="Enter Comment Here"></textarea>
+            <input type="hidden" value="{{id}}" name="post-id">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary textShadow1px boxShadow" id="addCommentBtn">
+              Submit Comment!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</section>
+
+<script src="/js/addComment.js"></script>
+</body>
+
+</html>

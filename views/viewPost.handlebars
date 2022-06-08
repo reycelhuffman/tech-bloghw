@@ -1,0 +1,43 @@
+<section class="pageBox">
+  <section class="postBox">
+    <div class="postMessageHeader">
+      <div>
+        <h4 class="leftAlign">{{title}}</h4>
+      </div>
+      <div class="rightAlign">
+        <h5>Posted by {{user.username}}</h5>
+      </div>
+    </div>
+    <div class="postText">
+      <p>
+        {{content}}
+      </p>
+      <button>
+        <span id="addCommentBtn" data-id="{{id}}" data-target="modal-card">Add comment</span>
+      </button>
+    </div>
+  </section>
+  
+
+  {{#each comments as |comment|}}
+  <section class="postBox">
+    <div class="postMessageHeader">
+      <div>
+        <h5 class="leftAlign">Comment</h5>
+      </div>
+      <div class="rightAlign">
+      </div>
+    </div>
+    <div class="postText">
+      <p>
+        {{comment.commentContent}}
+      </p>
+    </div>
+
+  </section>
+  {{/each}}
+</section>
+<script src="/js/viewPost.js"></script>
+</body>
+
+</html>
