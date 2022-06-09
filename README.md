@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/IIMacGyverII/Tech_Blog/main/techBlogSSpng.png)
 
 
 ## Credit: 
-Instructors and TA's at Northwestern, Joshua Christianson 
+Instructors, TA's at Northwestern, and Joshua Christianson 3x
 
 ## Licenses Used
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
