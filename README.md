@@ -17,12 +17,10 @@ In your terminal run "npm i" and then "nmp run seed" and then "nodemon server.js
 ## Screenshots 
 Heroku links: 
 Screenshots on 
-GitHubcommentdisplayed.png
-![Screenshot](https://raw.githubusercontent.com/reycelhuffman/tech-bloghw/imagesAssets/commentdisplayed.png)
-https://raw.githubusercontent.com/IIMacGyverII/Tech_Blog/main/techBlogSSpng.png)
-![Screenshot](https://github.com/reycelhuffman/tech-bloghw/loginsignupscreenshot.png)
-![Screenshot](https://github.com/reycelhuffman/tech-bloghw/makingcomments.png)
-![Screenshot](https://github.com/reycelhuffman/tech-bloghw/screenshot.png)
+![commentdisplayed](https://user-images.githubusercontent.com/99461956/172933656-854a37f8-2ed8-4fb3-94f4-37de5103b2a9.png)
+![loginsignupscreenshot](https://user-images.githubusercontent.com/99461956/172933667-dbbce917-8f3e-433f-b318-1ac47d60ae92.png)
+![makingcomments](https://user-images.githubusercontent.com/99461956/172933679-4ff6b254-d469-4c14-8b8b-64c028393a35.png)
+![screenshot](https://user-images.githubusercontent.com/99461956/172933691-6899a6ec-1fb6-4116-a927-716fdeafa3bd.png)
 
 
 ## Credit: 
